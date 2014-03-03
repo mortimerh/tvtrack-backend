@@ -1,0 +1,29 @@
+[02-Aug-2013 15:46:19 UTC] PHP Parse error:  syntax error, unexpected end of file in /Users/Mortimer/Documents/htdocs/tvtrack/app/routes.php on line 21
+[02-Aug-2013 17:10:42 UTC] PHP Parse error:  syntax error, unexpected '{' in /Users/Mortimer/Documents/htdocs/tvtrack/app/routes.php on line 30
+[02-Aug-2013 17:17:06 UTC] PHP Parse error:  syntax error, unexpected ')' in /Users/Mortimer/Documents/htdocs/tvtrack/app/routes.php on line 41
+[02-Aug-2013 17:34:58 UTC] PHP Parse error:  syntax error, unexpected ';' in /Users/Mortimer/Documents/htdocs/tvtrack/app/storage/views/54714b310b7f2340e877ae98c0bb7418 on line 9
+[02-Aug-2013 17:36:10 UTC] PHP Parse error:  syntax error, unexpected ')' in /Users/Mortimer/Documents/htdocs/tvtrack/app/storage/views/54714b310b7f2340e877ae98c0bb7418 on line 14
+[02-Aug-2013 18:16:41 UTC] PHP Parse error:  syntax error, unexpected ')' in /Users/Mortimer/Documents/htdocs/tvtrack/app/routes.php on line 36
+[02-Aug-2013 20:12:41 UTC] PHP Parse error:  syntax error, unexpected '=', expecting ')' in /Users/Mortimer/Documents/htdocs/tvtrack/app/config/auth.php on line 52
+[02-Aug-2013 22:21:58 UTC] PHP Parse error:  syntax error, unexpected 'getShow' (T_STRING), expecting function (T_FUNCTION) in /Users/Mortimer/Documents/htdocs/tvtrack/app/controllers/ShowController.php on line 3
+[02-Aug-2013 22:22:36 UTC] PHP Fatal error:  Access level to Show::$timestamps must be public (as in class Illuminate\Database\Eloquent\Model) in /Users/Mortimer/Documents/htdocs/tvtrack/app/models/Show.php on line 2
+[04-Aug-2013 16:18:38 UTC] PHP Fatal error:  Using $this when not in object context in /Users/Mortimer/Documents/htdocs/tvtrack/app/models/Show.php on line 9
+[04-Aug-2013 16:19:05 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /Users/Mortimer/Documents/htdocs/tvtrack/app/models/Show.php on line 9
+[04-Aug-2013 16:19:20 UTC] PHP Fatal error:  Access to undeclared static property: Show::$name in /Users/Mortimer/Documents/htdocs/tvtrack/app/models/Show.php on line 9
+[04-Aug-2013 16:38:17 UTC] PHP Parse error:  syntax error, unexpected '?>', expecting function (T_FUNCTION) in /Users/Mortimer/Documents/htdocs/tvtrack/app/models/ShowMeta.php on line 23
+[04-Aug-2013 16:39:14 UTC] PHP Parse error:  syntax error, unexpected '?>', expecting function (T_FUNCTION) in /Users/Mortimer/Documents/htdocs/tvtrack/app/models/ShowMeta.php on line 20
+[04-Aug-2013 17:02:26 UTC] PHP Fatal error:  Class 'Episodes' not found in /Users/Mortimer/Documents/htdocs/tvtrack/app/controllers/ShowController.php on line 7
+[04-Aug-2013 18:27:52 UTC] PHP Parse error:  syntax error, unexpected 'fetchShowFullInfo' (T_STRING), expecting variable (T_VARIABLE) in /Users/Mortimer/Documents/htdocs/tvtrack/app/controllers/ShowController.php on line 13
+[04-Aug-2013 18:28:32 UTC] PHP Fatal error:  Call to undefined function fetchShowFullInfo() in /Users/Mortimer/Documents/htdocs/tvtrack/app/controllers/ShowController.php on line 8
+[04-Aug-2013 18:43:13 UTC] PHP Parse error:  syntax error, unexpected ''status'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /Users/Mortimer/Documents/htdocs/tvtrack/app/controllers/ShowController.php on line 29
+[04-Aug-2013 18:59:29 UTC] PHP Parse error:  syntax error, unexpected '(' in /Users/Mortimer/Documents/htdocs/tvtrack/app/models/ShowMeta.php on line 4
+[04-Aug-2013 19:08:29 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /Users/Mortimer/Documents/htdocs/tvtrack/app/controllers/ShowController.php on line 27
+[04-Aug-2013 19:08:47 UTC] PHP Fatal error:  Call to a member function format() on a non-object in /Users/Mortimer/Documents/htdocs/tvtrack/app/controllers/ShowController.php on line 25
+[04-Aug-2013 19:12:19 UTC] PHP Fatal error:  Call to a member function format() on a non-object in /Users/Mortimer/Documents/htdocs/tvtrack/app/controllers/ShowController.php on line 27
+[11-Aug-2013 16:34:14 UTC] PHP Parse error:  syntax error, unexpected '$e' (T_VARIABLE), expecting identifier (T_STRING) or namespace (T_NAMESPACE) or \\ (T_NS_SEPARATOR) in /Users/Mortimer/Documents/htdocs/tvtrack/app/controllers/ShowController.php on line 26
+[11-Aug-2013 22:27:08 UTC] PHP Parse error:  syntax error, unexpected ')', expecting identifier (T_STRING) or namespace (T_NAMESPACE) or \\ (T_NS_SEPARATOR) in /Users/Mortimer/Documents/htdocs/tvtrack/app/controllers/ShowController.php on line 26
+[11-Aug-2013 22:28:59 UTC] PHP Parse error:  syntax error, unexpected '$e' (T_VARIABLE), expecting identifier (T_STRING) or namespace (T_NAMESPACE) or \\ (T_NS_SEPARATOR) in /Users/Mortimer/Documents/htdocs/tvtrack/app/controllers/ShowController.php on line 26
+[11-Aug-2013 22:29:12 UTC] PHP Parse error:  syntax error, unexpected ')', expecting variable (T_VARIABLE) in /Users/Mortimer/Documents/htdocs/tvtrack/app/controllers/ShowController.php on line 26
+[11-Aug-2013 22:29:17 UTC] PHP Parse error:  syntax error, unexpected '$test' (T_VARIABLE), expecting identifier (T_STRING) or namespace (T_NAMESPACE) or \\ (T_NS_SEPARATOR) in /Users/Mortimer/Documents/htdocs/tvtrack/app/controllers/ShowController.php on line 26
+[11-Aug-2013 23:14:40 UTC] PHP Fatal error:  Class 'object' not found in /Users/Mortimer/Documents/htdocs/tvtrack/app/controllers/ShowController.php on line 7
+[11-Aug-2013 23:14:46 UTC] PHP Fatal error:  Class 'Object' not found in /Users/Mortimer/Documents/htdocs/tvtrack/app/controllers/ShowController.php on line 7
