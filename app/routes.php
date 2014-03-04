@@ -18,6 +18,26 @@ Route::get('/', array('as' => 'home', function()
 
 
 
+Route::group(array("prefix" => "api"), function()
+{
+
+	Route::get('/users/{user_id}/shows', array('uses' => 'API_FollowedShowsController@index'))
+				 ->where(array('user_id' => '[0-9]+'));
+
+	Route::get('/users/{user_id}/shows/{show_id}', array('uses' => 'API_FollowedShowsController@show'))
+				 ->where(array('user_id' => '[0-9]+', 'show_id' => '[0-9]+'));
+
+	Route::post('/users/{user_id}/shows/{show_id}', array('uses' => 'API_FollowedShowsController@store'))
+ 				 ->where(array('user_id' => '[0-9]+', 'show_id' => '[0-9]+'));
+
+ 	Route::delete('/users/{user_id}/shows/{show_id}', array('uses' => 'API_FollowedShowsController@destroy'))
+ 				 ->where(array('user_id' => '[0-9]+', 'show_id' => '[0-9]+'));
+
+});
+
+
+
+
 Route::group( array('before' => 'auth'), function()
 {
 	Route::get('/profile', array('as' => 'profile', function()
@@ -30,9 +50,6 @@ Route::group( array('before' => 'auth'), function()
 		$users = User::all();
 		return View::make('users')->with('users', $users);
 	}));
-
-	Route::get('/shows', array('uses' => 'ShowController@getShows'));
-	Route::get('/show/{id}', array('uses' => 'ShowController@getShow'))->where(array('id' => '[0-9]+'));
 });
 
 /* Auth routes (all filters are applied in controller) */

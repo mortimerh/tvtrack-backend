@@ -60,7 +60,11 @@ class User extends Eloquent implements UserInterface {
   */
   public function shows()
   {
-    return $this->belongsToMany('Show');
+    return $this->belongsToMany('Show', 'users_has_shows');
+  }
+
+  public function isFollowingShow($showId) {
+    return ($this->shows()->where('id', $showId)->count() > 0);
   }
 }
 ?>

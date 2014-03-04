@@ -31,7 +31,11 @@ class Show extends Eloquent
   }
 
   public function users(){
-    return $this->belongsToMany('User');
+    return $this->belongsToMany('User', 'users_has_shows');
+  }
+
+  public function isFollowedByUser($user_id) {
+    return ($this->users()->where('id', $user_id)->count() > 0);
   }
 }
 ?>
