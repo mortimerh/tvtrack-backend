@@ -1,0 +1,27 @@
+API specifications
+
+### Show info
+GET /api/shows -> too big? need some limit
+GET /api/shows/{id} -> get show data
+GET /api/shows/{id}/episodes -> get show data + episode list
+
+
+### Followed Shows
+
+GET /api/users/{user_id}/shows -> all followed shows
+GET /api/users/{user_id}/shows/{show_id} -> get follow status for show_id + show data (not episodes)
+POST /api/users/{user_id}/shows/{show_id} -> follow show_id
+DELETE /api/users/{user_id}/shows/{show_id} -> unfollow show_id
+
+### Watched episodes
+GET /api/users/{user_id}/episodes -> all watched episodes
+GET /api/users/{user_id}/episodes/{episode_id} -> watched status for episode_id
+POST /api/users/{user_id}/episodes/{episode_id} -> set episode_id watched
+DELETE /api/users/{user_id}/episodes/{episode_id} -> set episode_id unwatched
+
+### Watched episodes for show
+GET /api/users/{user_id}/shows/episodes -> all watched episodes for all followed shows
+GET /api/users/{user_id}/shows/{show_id}/episodes -> follow-status for show_id and possibly watched episodes for show_id
+GET /api/users/{user_id}/shows/{show_id}/episodes/{episode_id} -> follow-status for show_id and watched-status for episode_id
+
+POST, DELETE could be added for completeness but would be redundant
